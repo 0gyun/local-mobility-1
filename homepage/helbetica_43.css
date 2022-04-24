@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@font-face
+{
+    font-family: 'Helvetica-43-light';
+    src: url(./font/helvetica-43-light-extended.otf) format('truetype');
+}
+
+body
+{
+    font-family: Helvetica-43-light
+}
