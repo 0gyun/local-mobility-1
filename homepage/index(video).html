@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <a href="./main.html" class="logo">
+        <img alt="" src="./images/logo_left_transparent.png" style="width: 13.85vw; height:auto; margin-left: 4.47vw; margin-top: 2.76vw;">
+    </a>
+    <div class="video_box" style="display: flex; justify-content: center;">
+        <div class="player" style="margin-top: 2.7vw; height: 53.2vw; width: 94.58vw;">
+            <video class="player__video viewer" poster="./images/suburban1.png" style="width: 100%; height: 100%;">
+                <source src="./m1.mp4" type="video/mp4">
+                이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때 화면에 표시됩니다!
+            </video>
+            
+            <div class="player__controls">
+                <div class="progress">
+                    <div class="progress__filled"></div>
+                </div>
+                <button class="player__button toggle" title="Toggle Play">►</button>
+                <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+                <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+                <button data-skip="-5" class="player__button">« 5s</button>
+                <button data-skip="5" class="player__button">5s »</button>
+            </div>
+        </div>
+    </div>
+    <div class="video_bar" style="margin-top: 1.2vw; height: 8.59vw; display: flex; justify-content: center;">
+        <div class="bar_1" style="height: 0.78vw; left: 0px; width: 22.86vw; display: inline-block; margin-right: 0.52vw;">
+            <img alt="" src="./images/black_line.png" style="width: 100%; height: 100%; margin: 0px; border-radius: 0px; display: block">
+            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw;">
+                <div class="content">Scenario 1</div>
+            </div>
+            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
+                <div class="content">Farm to Table</div>
+            </div>
+            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
+                <div class="content">농장에서 테이블로</div>
+            </div>
+        </div>
+        <div class="bar_2" style="height: 0.78vw; left: 0px; width: 22.86vw; display: inline-block; margin-right: 0.52vw; margin-left: 0.52vw;">
+            <img alt="" src="./images/gray_line.png" style="width: 100%; height: 100%; margin: 0px; border-radius: 0px; display: block">
+            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
+                <div class="content">Scenario 2</div>
+            </div>
+            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
+                <div class="content">Life On Demand</div>
+            </div>
+            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
+                <div class="content">주문형 생활</div>
+            </div>
+        </div>
+        <div class="bar_3" style="height: 0.78vw; left: 0px; width: 22.86vw; display: inline-block; margin-right: 0.52vw; margin-left: 0.52vw;">
+            <img alt="" src="./images/gray_line.png" style="width: 100%; height: 100%; margin: 0px; border-radius: 0px; display: block;">
+            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
+                <div class="content">Scenario 3</div>
+            </div>
+            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
+                <div class="content">Heart to Heart</div>
+            </div>
+            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
+                <div class="content">마음에서 마음으로</div>
+            </div>
+        </div>
+        <div class="bar_4" style="height: 0.78vw; left: 0px; width: 22.86vw; display: inline-block; margin-left: 0.52vw;">
+            <img alt="" src="./images/gray_line.png" style="width: 100%; height: 100%; margin: 0px; border-radius: 0px; display: block">
+            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
+                <div class="content">Function</div>
+            </div>
+            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
+                <div class="content">Specification</div>
+            </div>
+            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
+                <div class="content">기능 살펴보기</div>
+            </div>
+        </div>
+    </div>
+    <div class="3D_Simulator" style="margin-top: 10.68vw; margin-left: 4.479vw; display: block">
+        <div class="Simulator_1" style="margin-bottom: 1.04vw; font-family: helvetica-43-light-extended; font-size: 2.604vw; line-height: 3.02vw; font-weight: 400;">3D Simulator</div>
+        <div class="Simulator_2" style="font-family: helvetica-43-light-extended; font-size: 1.25vw; line-height: 1.46vw; font-weight: 400;">3D Simulator에서 시나리오 별로</div>
+        <div class="Simulator_3" style="font-family: helvetica-43-light-extended; font-size: 1.25vw; line-height: 1.46vw; font-weight: 400;">Local-life Mobility의 다양한 기능을 만나보세요.</div>
+    </div>
+
+    <script>
+        const player = document.querySelector('.player');
+        const video = player.querySelector('.viewer');
+        const progress = player.querySelector('.progress');
+        const progressBar = player.querySelector('.progress__filled');
+        const toggle = player.querySelector('.toggle');
+        const skipButtons = player.querySelectorAll('[data-skip]');
+        const ranges = player.querySelectorAll('.player__slider');
+
+        function togglePlay() {
+            if(video.paused) { // playing이라는 property는 없다. 'paused'만 있음.
+                video.play();
+            } else {
+                video.pause();
+            }
+        
+        }
+
+        video.addEventListener('click', togglePlay);
+        toggle.addEventListener('click', togglePlay);
+
+        const method = video.paused ? 'play' : 'pause'; // 메서드 이름
+        video[method](); // 메서드 호출
+
+        // 이런 것도 가능. 근데 가독성이 좀 떨어짐
+        video[video.paused ? 'play' : 'pause']();
+
+        function updateButton() {
+            // 이 리스너 자체가 video에 붙기 때문에, this가 video를 가리킨다.
+            const icon = this.paused ? '►' : '❚❚';
+            toggle.textContent = icon;
+        }
+
+        video.addEventListener('play', updateButton);
+        video.addEventListener('pause', updateButton);
+
+        function skip() {
+            video.currentTime += parseFloat(this.dataset.skip);
+        }
+
+        skipButtons.forEach(button => button.addEventListener('click', skip));
+        
+
+        video.addEventListener('click', togglePlay);
+        toggle.addEventListener('click', togglePlay);
+
+        function handleRangeUpdate() {
+            video[this.name] = this.value;
+        }
+
+        ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
+        // 버튼을 놓지 않고 움직이는 도중에도 변화가 실시간으로 적용되어야 함.
+        ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate));
+
+        function handleProgress() {
+            const percent = (video.currentTime / video.duration) * 100;
+            progressBar.style.flexBasis = `${percent}%`;
+        }
+
+        video.addEventListener('timeupdate', handleProgress);
+
+        function scrub(e) {
+            const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
+            video.currentTime = scrubTime;
+        }
+
+        progress.addEventListener('click', scrub);
+        progress.addEventListener('mousemove', scrub);
+
+        let mousedown = false;
+        progress.addEventListener('click', scrub);
+        progress.addEventListener('mousemove', (e) => mousedown && scrub(e)); 
+        progress.addEventListener('mousedown', () => mousedown = true);
+        progress.addEventListener('mouseup', () => mousedown = false);
+    </script>
+         <!--<div class="bubble-r-box" style="height: 162.999px; left: 249.923px; width: 22.86vw;">
+                <div class="bubble-element Group" style="width: 22.86vw; left: 0px; box-sizing: border-box; z-index: 6; height: 162.999px; top: 0px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;">
+                    <div class="bubble-r-line" style="margin-top: 14px; height: 0.78vw;">
+                        <div class="bubble-r-box" style="height: 0.78vw; left: 0px; width: 22.86vw;">
+                            <div class="bubble-element Image" style="box-sizing: border-box; z-index: 4; height: 0.78vw; width: 22.86vw; left: 0px; top: 0px; border-radius: 0px;">
+                                <img alt="" src="./images/black_line.png" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bubble-r-line" style="margin-top: 22px; height: 112px;">
+                        <div class="bubble-r-box" style="height: 112px; left: 97.9923px; width: 240px;">
+                            <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 4; height: 52px; width: 136px; left: 54px; top: 0px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 24px; color: rgb(0, 0, 0); text-align: center; line-height: 1.16667; border-radius: 0px;"><div class="content">Scenario 1</div></div>
+                            <div class="bubble-element Shape" style="position: absolute; box-sizing: border-box; z-index: 2; height: 100px; width: 240px; left: 0px; top: 4px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;"></div>
+                            <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 53px; width: 208px; left: 17px; top: 39px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 28px; font-weight: 700; color: rgb(0, 0, 0); text-align: center; line-height: 1.17857; border-radius: 0px;"><div class="content">Farm to Table</div></div>
+                            <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 46px; width: 173px; left: 35px; top: 66px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 19px; color: rgb(0, 0, 0); text-align: center; line-height: 1.21053; padding-top: 11.5px; border-radius: 0px;"><div class="content">농장에서 테이블로</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bubble-r-box" style="height: 163px; left: 772.231px; width: 22.86vw;">
+                <div class="bubble-element Group" style="width: 22.86vw; left: 0px; position: absolute; box-sizing: border-box; z-index: 17; height: 163px; top: 0px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;">
+                    <div class="bubble-r-line" style="margin-top: 14px; height: 0.78vw;">
+                        <div class="bubble-r-box" style="height: 0.78vw; left: 0px; width: 22.86vw;">
+                            <div class="bubble-element Image" style="position: absolute; box-sizing: border-box; z-index: 4; height: 0.78vw; width: 22.86vw; left: 0px; top: 0px; border-radius: 0px;">
+                                <img alt="" src="./images/gray_line.png" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bubble-r-line" style="margin-top: 22px; height: 109px;">
+                        <div class="bubble-r-box" style="height: 109px; left: 95px; width: 245.984px;">
+                            <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 48px; width: 136px; left: 56.9919px; top: 0px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 24px; color: rgb(152, 152, 152); text-align: center; line-height: 1.16667; border-radius: 0px;"><div class="content">Scenario 2</div></div>
+                            <div class="bubble-element Shape" style="position: absolute; box-sizing: border-box; z-index: 2; height: 100px; width: 240px; left: 0px; top: 4px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;"></div>
+                            <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 53px; width: 242px; left: 3.98438px; top: 39px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 28px; font-weight: 700; color: rgb(152, 152, 152); text-align: center; line-height: 1.17857; border-radius: 0px;"><div class="content">Life On Demand</div></div>
+                            <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 43px; width: 118px; left: 64.9921px; top: 66px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 19px; color: rgb(152, 152, 152); text-align: center; line-height: 1.21053; padding-top: 10px; border-radius: 0px;"><div class="content">주문형 생활</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bubble-r-box" style="height: 164px; left: 1303.79px; width: 439px;">
+                <div class="bubble-element Group" style="width: 439px; left: 0px; position: absolute; box-sizing: border-box; z-index: 7; height: 164px; top: 0px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;">
+                    <div class="bubble-r-line" style="margin-top: 14px; height: 15px;">
+                        <div class="bubble-r-box" style="height: 15px; left: 0px; width: 22.86vw;">
+                            <div class="bubble-element Image" style="position: absolute; box-sizing: border-box; z-index: 4; height: 15px; width: 22.86vw; left: 0px; top: 0px; border-radius: 0px;">
+                                <img alt="" src="./images/gray_line.png" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bubble-r-line" style="margin-top: 22px; height: 109px;"><div class="bubble-r-box" style="height: 109px; left: 99.9921px; width: 240px;">
+                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 4; height: 48px; width: 136px; left: 52px; top: 0px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 24px; color: rgb(152, 152, 152); text-align: center; line-height: 1.16667; border-radius: 0px;"><div class="content">Scenario 3</div></div>
+                        <div class="bubble-element Shape" style="position: absolute; box-sizing: border-box; z-index: 2; height: 100px; width: 240px; left: 0px; top: 4px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;"></div>
+                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 53px; width: 212px; left: 14px; top: 39px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 28px; font-weight: 700; color: rgb(152, 152, 152); text-align: center; line-height: 1.17857; border-radius: 0px;"><div class="content">Heart to Heart</div></div>
+                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 43px; width: 173px; left: 34px; top: 66px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 19px; color: rgb(152, 152, 152); text-align: center; line-height: 1.21053; padding-top: 10px; border-radius: 0px;"><div class="content">마음에서 마음으로</div></div>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="bubble-r-box" style="height: 165px; left: 1835.36px; width: 439px;">
+            <div class="bubble-element Group" style="width: 439px; left: 0px; position: absolute; box-sizing: border-box; z-index: 8; height: 165px; top: 0px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;">
+                <div class="bubble-r-line" style="margin-top: 14px; height: 15px;">
+                    <div class="bubble-r-box" style="height: 15px; left: -1px; width: 22.86vw;">
+                        <div class="bubble-element Image" style="position: absolute; box-sizing: border-box; z-index: 4; height: 15px; width: 22.86vw; left: 0px; top: 0px; border-radius: 0px;">
+                            <img alt="" src="./images/gray_line.png" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="bubble-r-line" style="margin-top: 22px; height: 112px;">
+                    <div class="bubble-r-box" style="height: 112px; left: 99.9921px; width: 240px;">
+                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 52px; width: 113px; left: 64px; top: 0px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 24px; color: rgb(152, 152, 152); text-align: center; line-height: 1.16667; border-radius: 0px;"><div class="content">Function</div></div>
+                        <div class="bubble-element Shape" style="position: absolute; box-sizing: border-box; z-index: 2; height: 100px; width: 240px; left: 0px; top: 4px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;"></div>
+                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 53px; width: 201px; left: 19px; top: 39px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 28px; font-weight: 700; color: rgb(152, 152, 152); text-align: center; line-height: 1.17857; border-radius: 0px;"><div class="content">Specification</div></div>
+                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 46px; width: 136px; left: 52px; top: 66px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 19px; color: rgb(152, 152, 152); text-align: center; line-height: 1.21053; padding-top: 11.5px; border-radius: 0px;"><div class="content">기능 살펴보기</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="bubble-r-line" style="margin-top: 193px; height: 166px;">
+        <div class="bubble-r-box" style="height: 166px; left: 120.571px; width: 504px;">
+            <div class="bubble-element Group" style="width: 504px; left: 0px; position: absolute; box-sizing: border-box; z-index: 10; height: 166px; top: 0px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;">
+                <div class="bubble-r-line" style="margin-top: 0px; height: 78px;">
+                    <div class="bubble-r-box" style="height: 78px; left: -10px; width: 320px;">
+                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 78px; width: 320px; left: 0px; top: 0px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: helvetica-43-light-extended; font-size: 49px; color: rgb(0, 0, 0); text-align: center; line-height: 1.16327; border-radius: 0px;"><div class="content">3D Simulator</div></div>
+                    </div>
+                </div>
+                <div class="bubble-r-line" style="margin-top: 0px; height: 88px;">
+                    <div class="bubble-r-box" style="height: 88px; left: 0px; width: 504px;">
+                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 88px; width: 504px; left: 0px; top: 0px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: helvetica-43-light-extended; font-size: 23px; color: rgb(0, 0, 0); line-height: 1.16667; border-radius: 0px;"><div class="content">3D Simulator에서 시나리오 별로
+    Local-life Mobility의 다양한 기능을 만나보세요. </div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+</body>
+</html>
