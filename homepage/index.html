@@ -5,10 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Life Mobility</title>
+    <style>
+        @media screen and (min-width:768px)
+        {
+            .logo_img
+            {
+                width: 13.85vw;
+                height:auto;
+                margin-left: 4.47vw;
+                margin-top: 2.76vw;
+            }
+
+            .bar_img
+            {
+                display: block;
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                border-radius: 0px;
+            }
+            .video_bar
+            {
+                display: flex;
+                margin-top: 1.2vw;
+                height: 8.59vw;
+                justify-content: center;
+            }
+            .senario
+            {
+                display: flex;
+            }
+            .bar
+            {
+                height: 0.78vw;
+                left: 0px;
+                width: 22.86vw;
+                display: inline-block;
+                margin-right: 0.52vw;
+                margin-left: 0.52vw;
+            }
+            .Simulator
+            {
+                margin-top: 10.68vw;
+                margin-left: 4.479vw;
+                display: block;
+            }
+
+            .Simulator_1
+            {
+                margin-bottom: 1.04vw;
+                font-family: helvetica-43-light-extended;
+                font-size: 2.604vw;
+                line-height: 3.02vw;
+                font-weight: 400;
+            }
+
+            .Simulator_2
+            {
+                font-family: helvetica-43-light-extended;
+                font-size: 1.25vw;
+                line-height: 1.46vw;
+                font-weight: 400;
+            }
+
+            .Simulator_3
+            {
+                font-family: helvetica-43-light-extended;
+                font-size: 1.25vw;
+                line-height: 1.46vw;
+                font-weight: 400;
+            }
+        }
+        
+        @media screen and (max-width:767px)
+        {
+            .logo_img
+            {
+                width: 28.611vw;
+                height:auto;
+                margin-left: 2.22vw;
+                margin-top: 7.2vw;
+            }
+
+            .video
+            {
+                margin-top: 4.44vw;
+                height: 53.75vw;
+                width: 94.444vw;
+            }
+
+            .senario
+            {
+                display: none;
+            }
+
+            .content
+            {
+                display: none;
+            }
+
+            .video_bar
+            {
+                display: none;
+            }
+
+            .bar
+            {
+                display: none;
+            }
+
+            .bar_img
+            {
+                display: none;
+            }
+
+            .Simulator
+            {
+                margin-top: 20.417vw;
+                margin-left: 2.222vw;
+                display: block;
+            }
+
+            .Simulator_1
+            {
+                margin-bottom: 1.786vw;
+                font-size: 4.633vw;
+                line-height: 5.422vw;
+                font-family: helvetica-43-light-extended;
+            }
+
+            .Simulator_2
+            {
+                font-size: 2.258vw;
+                line-height: 2.642vw;
+                font-family: helvetica-43-light-extended;
+            }
+
+            .Simulator_3
+            {
+                font-size: 2.258vw;
+                line-height: 2.642vw;
+                font-family: helvetica-43-light-extended;
+            }
+        }
+    </style>
 </head>
 <body>
-    <a href="./index(video).html" class="logo">
-        <img alt="" src="./images/logo_left_transparent.png" style="width: 13.85vw; height:auto; margin-left: 4.47vw; margin-top: 2.76vw;">
+    <a href="./index.html" class="logo">
+        <img alt="" class="logo_img" src="./images/logo_left_transparent.png">
     </a>
     <div class="video_box" style="display: flex; justify-content: center;">
         <div class="video" style="margin-top: 2.7vw; height: 53.2vw; width: 94.58vw;">
@@ -18,60 +162,61 @@
             </video>
         </div>
     </div>
-    <div class="video_bar" style="margin-top: 1.2vw; height: 8.59vw; display: flex; justify-content: center;">
-        <div class="bar_1" style="height: 0.78vw; left: 0px; width: 22.86vw; display: inline-block; margin-right: 0.52vw;">
-            <img alt="" src="./images/black_line.png" style="width: 100%; height: 100%; margin: 0px; border-radius: 0px; display: block">
-            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw;">
+
+    <div class="video_bar">
+        <div class="bar">
+            <img alt="" class="bar_img" src="./images/black_line.png">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw;">
                 <div class="content">Scenario 1</div>
             </div>
-            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
                 <div class="content">Farm to Table</div>
             </div>
-            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
                 <div class="content">농장에서 테이블로</div>
             </div>
         </div>
-        <div class="bar_2" style="height: 0.78vw; left: 0px; width: 22.86vw; display: inline-block; margin-right: 0.52vw; margin-left: 0.52vw;">
-            <img alt="" src="./images/gray_line.png" style="width: 100%; height: 100%; margin: 0px; border-radius: 0px; display: block">
-            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
+        <div class="bar">
+            <img alt="" class="bar_img" src="./images/gray_line.png">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
                 <div class="content">Scenario 2</div>
             </div>
-            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
                 <div class="content">Life On Demand</div>
             </div>
-            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
                 <div class="content">주문형 생활</div>
             </div>
         </div>
-        <div class="bar_3" style="height: 0.78vw; left: 0px; width: 22.86vw; display: inline-block; margin-right: 0.52vw; margin-left: 0.52vw;">
-            <img alt="" src="./images/gray_line.png" style="width: 100%; height: 100%; margin: 0px; border-radius: 0px; display: block;">
-            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
+        <div class="bar">
+            <img alt="" class="bar_img" src="./images/gray_line.png">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
                 <div class="content">Scenario 3</div>
             </div>
-            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
                 <div class="content">Heart to Heart</div>
             </div>
-            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
                 <div class="content">마음에서 마음으로</div>
             </div>
         </div>
-        <div class="bar_4" style="height: 0.78vw; left: 0px; width: 22.86vw; display: inline-block; margin-left: 0.52vw;">
-            <img alt="" src="./images/gray_line.png" style="width: 100%; height: 100%; margin: 0px; border-radius: 0px; display: block">
-            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
+        <div class="bar">
+            <img alt="" class="bar_img" src="./images/gray_line.png">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
                 <div class="content">Function</div>
             </div>
-            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
                 <div class="content">Specification</div>
             </div>
-            <div class="senario" style="display: flex; justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
                 <div class="content">기능 살펴보기</div>
             </div>
         </div>
     </div>
-    <div class="3D_Simulator" style="margin-top: 10.68vw; margin-left: 4.479vw; display: block">
-        <div class="Simulator_1" style="margin-bottom: 1.04vw; font-family: helvetica-43-light-extended; font-size: 2.604vw; line-height: 3.02vw; font-weight: 400;">3D Simulator</div>
-        <div class="Simulator_2" style="font-family: helvetica-43-light-extended; font-size: 1.25vw; line-height: 1.46vw; font-weight: 400;">3D Simulator에서 시나리오 별로</div>
-        <div class="Simulator_3" style="font-family: helvetica-43-light-extended; font-size: 1.25vw; line-height: 1.46vw; font-weight: 400;">Local-life Mobility의 다양한 기능을 만나보세요.</div>
+    <div class="Simulator">
+        <div class="Simulator_1">3D Simulator</div>
+        <div class="Simulator_2">3D Simulator에서 시나리오 별로</div>
+        <div class="Simulator_3">Local-life Mobility의 다양한 기능을 만나보세요.</div>
     </div>
          <!--<div class="bubble-r-box" style="height: 162.999px; left: 249.923px; width: 22.86vw;">
                 <div class="bubble-element Group" style="width: 22.86vw; left: 0px; box-sizing: border-box; z-index: 6; height: 162.999px; top: 0px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;">
