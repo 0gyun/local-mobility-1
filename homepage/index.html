@@ -75,6 +75,19 @@
                 line-height: 1.46vw;
                 font-weight: 400;
             }
+
+            .video
+            {
+                margin-top: 2.7vw;
+                height: 53.2vw;
+                width: 94.58vw;
+            }
+
+            .video_box
+            {
+                display: flex;
+                justify-content: center;
+            }
         }
         
         @media screen and (max-width:767px)
@@ -87,11 +100,17 @@
                 margin-top: 7.2vw;
             }
 
+            .video_box
+            {
+                display: flex;
+                justify-content: center;
+            }
+
             .video
             {
                 margin-top: 4.44vw;
-                height: 53.75vw;
-                width: 94.444vw;
+                height: auto;
+                width: 93.7vw;
             }
 
             .senario
@@ -154,8 +173,8 @@
     <a href="./index.html" class="logo">
         <img alt="" class="logo_img" src="./images/logo_left_transparent.png">
     </a>
-    <div class="video_box" style="display: flex; justify-content: center;">
-        <div class="video" style="margin-top: 2.7vw; height: 53.2vw; width: 94.58vw;">
+    <div class="video_box">
+        <div class="video">
             <video poster="./images/suburban1.png" style="width: 100%; height: 100%;" controls>
                 <source src="./video/SC1_intro_2.mp4" type="video/mp4">
                 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때 화면에 표시됩니다!
