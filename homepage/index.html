@@ -168,6 +168,7 @@
             }
         }
     </style>
+    <script defer src="./videoControl.js"></script>
 </head>
 <body>
     <a href="./index.html" class="logo">
@@ -175,7 +176,7 @@
     </a>
     <div class="video_box">
         <div class="video">
-            <video poster="./images/suburban1.png" style="width: 100%; height: 100%;" controls>
+            <video id="main_video" poster="./images/video.png" style="width: 100%; height: 100%;" controls>
                 <source src="./video/SC1_intro_2.mp4" type="video/mp4">
                 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때 화면에 표시됩니다!
             </video>
@@ -183,7 +184,7 @@
     </div>
 
     <div class="video_bar">
-        <div class="bar">
+        <div class="bar" id="scn1">
             <img alt="" class="bar_img" src="./images/black_line.png">
             <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw;">
                 <div class="content">Scenario 1</div>
@@ -195,7 +196,7 @@
                 <div class="content">농장에서 테이블로</div>
             </div>
         </div>
-        <div class="bar">
+        <div class="bar" id="scn2">
             <img alt="" class="bar_img" src="./images/gray_line.png">
             <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
                 <div class="content">Scenario 2</div>
@@ -207,7 +208,7 @@
                 <div class="content">주문형 생활</div>
             </div>
         </div>
-        <div class="bar">
+        <div class="bar" id="scn3">
             <img alt="" class="bar_img" src="./images/gray_line.png">
             <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
                 <div class="content">Scenario 3</div>
@@ -219,7 +220,7 @@
                 <div class="content">마음에서 마음으로</div>
             </div>
         </div>
-        <div class="bar">
+        <div class="bar" id="func">
             <img alt="" class="bar_img" src="./images/gray_line.png">
             <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
                 <div class="content">Function</div>
