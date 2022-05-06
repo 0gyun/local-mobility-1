@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="threejs_model.css">
     <title>Local Life Mobility</title>
+    <link rel="shortcut icon" href="./images/favicon_BOMARKET.ico">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+        @font-face {
+            font-family: 'helvetica-43-light-extended';
+            src:url('./font/helvetica-43-light-extended.otf') format('woff'),
+                url('./font/helvetica-43-light-extended.otf') format('woff2');
+        }
+
         @media screen and (min-width:768px)
         {
             .logo_img
@@ -54,7 +63,6 @@
             .Simulator_1
             {
                 margin-bottom: 1.04vw;
-                font-family: helvetica-43-light-extended;
                 font-size: 2.604vw;
                 line-height: 3.02vw;
                 font-weight: 400;
@@ -62,7 +70,6 @@
 
             .Simulator_2
             {
-                font-family: helvetica-43-light-extended;
                 font-size: 1.25vw;
                 line-height: 1.46vw;
                 font-weight: 400;
@@ -70,7 +77,6 @@
 
             .Simulator_3
             {
-                font-family: helvetica-43-light-extended;
                 font-size: 1.25vw;
                 line-height: 1.46vw;
                 font-weight: 400;
@@ -150,21 +156,18 @@
                 margin-bottom: 1.786vw;
                 font-size: 4.633vw;
                 line-height: 5.422vw;
-                font-family: helvetica-43-light-extended;
             }
 
             .Simulator_2
             {
                 font-size: 2.258vw;
                 line-height: 2.642vw;
-                font-family: helvetica-43-light-extended;
             }
 
             .Simulator_3
             {
                 font-size: 2.258vw;
                 line-height: 2.642vw;
-                font-family: helvetica-43-light-extended;
             }
         }
     </style>
@@ -177,7 +180,7 @@
     <div class="video_box">
         <div class="video">
             <video id="main_video" poster="./images/video.png" style="width: 100%; height: 100%;" controls>
-                <source src="./video/SC1_intro_2.mp4" type="video/mp4">
+                <source src="./video/BOMARKET_Local_Life_Mobility_0506.mp4" type="video/mp4">
                 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때 화면에 표시됩니다!
             </video>
         </div>
@@ -192,145 +195,415 @@
             <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
                 <div class="content">Farm to Table</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
+            <div class="senario" style="justify-content: center; font-family: Noto Sans KR; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
                 <div class="content">농장에서 테이블로</div>
             </div>
         </div>
         <div class="bar" id="scn2">
             <img alt="" class="bar_img" src="./images/gray_line.png">
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw; color: #989898;">
                 <div class="content">Scenario 2</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700; color: #989898;">
                 <div class="content">Life On Demand</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
+            <div class="senario" style="justify-content: center; font-family: Noto Sans KR; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw; color: #989898;">
                 <div class="content">주문형 생활</div>
             </div>
         </div>
         <div class="bar" id="scn3">
             <img alt="" class="bar_img" src="./images/gray_line.png">
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw; color: #BABABA; opacity: 0.4; filter: blur(3px);">
                 <div class="content">Scenario 3</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700; color: #BABABA; opacity: 0.4; filter: blur(3px);">
                 <div class="content">Heart to Heart</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
+            <div class="senario" style="justify-content: center; font-family: Noto Sans KR; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw; color: #BABABA; opacity: 0.4; filter: blur(3px);">
                 <div class="content">마음에서 마음으로</div>
+            </div>
+            <div class="senario" style="top: 67.6042vw; left: 55.5vw; justify-content: center; font-family: Helvetica; font-size: 1.5057vw; line-height: 1.73125vw; color: #989898; font-weight: 700; z-index: 1; position: absolute;">
+                <div class="content">5월 9일 공개 예정</div>
             </div>
         </div>
         <div class="bar" id="func">
             <img alt="" class="bar_img" src="./images/gray_line.png">
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw; color: #989898;">
                 <div class="content">Function</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
+            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700; color: #989898;">
                 <div class="content">Specification</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
+            <div class="senario" style="justify-content: center; font-family: Noto Sans KR; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw; color: #989898;">
                 <div class="content">기능 살펴보기</div>
             </div>
         </div>
     </div>
     <div class="Simulator">
-        <div class="Simulator_1">3D Simulator</div>
-        <div class="Simulator_2">3D Simulator에서 시나리오 별로</div>
-        <div class="Simulator_3">Local-life Mobility의 다양한 기능을 만나보세요.</div>
-    </div>
-         <!--<div class="bubble-r-box" style="height: 162.999px; left: 249.923px; width: 22.86vw;">
-                <div class="bubble-element Group" style="width: 22.86vw; left: 0px; box-sizing: border-box; z-index: 6; height: 162.999px; top: 0px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;">
-                    <div class="bubble-r-line" style="margin-top: 14px; height: 0.78vw;">
-                        <div class="bubble-r-box" style="height: 0.78vw; left: 0px; width: 22.86vw;">
-                            <div class="bubble-element Image" style="box-sizing: border-box; z-index: 4; height: 0.78vw; width: 22.86vw; left: 0px; top: 0px; border-radius: 0px;">
-                                <img alt="" src="./images/black_line.png" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bubble-r-line" style="margin-top: 22px; height: 112px;">
-                        <div class="bubble-r-box" style="height: 112px; left: 97.9923px; width: 240px;">
-                            <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 4; height: 52px; width: 136px; left: 54px; top: 0px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 24px; color: rgb(0, 0, 0); text-align: center; line-height: 1.16667; border-radius: 0px;"><div class="content">Scenario 1</div></div>
-                            <div class="bubble-element Shape" style="position: absolute; box-sizing: border-box; z-index: 2; height: 100px; width: 240px; left: 0px; top: 4px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;"></div>
-                            <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 53px; width: 208px; left: 17px; top: 39px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 28px; font-weight: 700; color: rgb(0, 0, 0); text-align: center; line-height: 1.17857; border-radius: 0px;"><div class="content">Farm to Table</div></div>
-                            <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 46px; width: 173px; left: 35px; top: 66px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 19px; color: rgb(0, 0, 0); text-align: center; line-height: 1.21053; padding-top: 11.5px; border-radius: 0px;"><div class="content">농장에서 테이블로</div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bubble-r-box" style="height: 163px; left: 772.231px; width: 22.86vw;">
-                <div class="bubble-element Group" style="width: 22.86vw; left: 0px; position: absolute; box-sizing: border-box; z-index: 17; height: 163px; top: 0px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;">
-                    <div class="bubble-r-line" style="margin-top: 14px; height: 0.78vw;">
-                        <div class="bubble-r-box" style="height: 0.78vw; left: 0px; width: 22.86vw;">
-                            <div class="bubble-element Image" style="position: absolute; box-sizing: border-box; z-index: 4; height: 0.78vw; width: 22.86vw; left: 0px; top: 0px; border-radius: 0px;">
-                                <img alt="" src="./images/gray_line.png" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bubble-r-line" style="margin-top: 22px; height: 109px;">
-                        <div class="bubble-r-box" style="height: 109px; left: 95px; width: 245.984px;">
-                            <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 48px; width: 136px; left: 56.9919px; top: 0px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 24px; color: rgb(152, 152, 152); text-align: center; line-height: 1.16667; border-radius: 0px;"><div class="content">Scenario 2</div></div>
-                            <div class="bubble-element Shape" style="position: absolute; box-sizing: border-box; z-index: 2; height: 100px; width: 240px; left: 0px; top: 4px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;"></div>
-                            <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 53px; width: 242px; left: 3.98438px; top: 39px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 28px; font-weight: 700; color: rgb(152, 152, 152); text-align: center; line-height: 1.17857; border-radius: 0px;"><div class="content">Life On Demand</div></div>
-                            <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 43px; width: 118px; left: 64.9921px; top: 66px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 19px; color: rgb(152, 152, 152); text-align: center; line-height: 1.21053; padding-top: 10px; border-radius: 0px;"><div class="content">주문형 생활</div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bubble-r-box" style="height: 164px; left: 1303.79px; width: 439px;">
-                <div class="bubble-element Group" style="width: 439px; left: 0px; position: absolute; box-sizing: border-box; z-index: 7; height: 164px; top: 0px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;">
-                    <div class="bubble-r-line" style="margin-top: 14px; height: 15px;">
-                        <div class="bubble-r-box" style="height: 15px; left: 0px; width: 22.86vw;">
-                            <div class="bubble-element Image" style="position: absolute; box-sizing: border-box; z-index: 4; height: 15px; width: 22.86vw; left: 0px; top: 0px; border-radius: 0px;">
-                                <img alt="" src="./images/gray_line.png" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bubble-r-line" style="margin-top: 22px; height: 109px;"><div class="bubble-r-box" style="height: 109px; left: 99.9921px; width: 240px;">
-                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 4; height: 48px; width: 136px; left: 52px; top: 0px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 24px; color: rgb(152, 152, 152); text-align: center; line-height: 1.16667; border-radius: 0px;"><div class="content">Scenario 3</div></div>
-                        <div class="bubble-element Shape" style="position: absolute; box-sizing: border-box; z-index: 2; height: 100px; width: 240px; left: 0px; top: 4px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;"></div>
-                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 53px; width: 212px; left: 14px; top: 39px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 28px; font-weight: 700; color: rgb(152, 152, 152); text-align: center; line-height: 1.17857; border-radius: 0px;"><div class="content">Heart to Heart</div></div>
-                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 43px; width: 173px; left: 34px; top: 66px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 19px; color: rgb(152, 152, 152); text-align: center; line-height: 1.21053; padding-top: 10px; border-radius: 0px;"><div class="content">마음에서 마음으로</div></div>
-                    </div>
-                </div>
-            </div>
-        
-        <div class="bubble-r-box" style="height: 165px; left: 1835.36px; width: 439px;">
-            <div class="bubble-element Group" style="width: 439px; left: 0px; position: absolute; box-sizing: border-box; z-index: 8; height: 165px; top: 0px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;">
-                <div class="bubble-r-line" style="margin-top: 14px; height: 15px;">
-                    <div class="bubble-r-box" style="height: 15px; left: -1px; width: 22.86vw;">
-                        <div class="bubble-element Image" style="position: absolute; box-sizing: border-box; z-index: 4; height: 15px; width: 22.86vw; left: 0px; top: 0px; border-radius: 0px;">
-                            <img alt="" src="./images/gray_line.png" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;">
-                        </div>
-                    </div>
-                </div>
-                <div class="bubble-r-line" style="margin-top: 22px; height: 112px;">
-                    <div class="bubble-r-box" style="height: 112px; left: 99.9921px; width: 240px;">
-                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 52px; width: 113px; left: 64px; top: 0px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 24px; color: rgb(152, 152, 152); text-align: center; line-height: 1.16667; border-radius: 0px;"><div class="content">Function</div></div>
-                        <div class="bubble-element Shape" style="position: absolute; box-sizing: border-box; z-index: 2; height: 100px; width: 240px; left: 0px; top: 4px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;"></div>
-                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 53px; width: 201px; left: 19px; top: 39px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 28px; font-weight: 700; color: rgb(152, 152, 152); text-align: center; line-height: 1.17857; border-radius: 0px;"><div class="content">Specification</div></div>
-                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 46px; width: 136px; left: 52px; top: 66px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: Helvetica; font-size: 19px; color: rgb(152, 152, 152); text-align: center; line-height: 1.21053; padding-top: 11.5px; border-radius: 0px;"><div class="content">기능 살펴보기</div></div>
-                    </div>
-                </div>
-            </div>
+        <div class="Simulator_1" style="font-family: helvetica-43-light-extended;">3D Simulator</div>
+        <div class="Simulator_2" style="display: flex;">
+            <div class="Simul_content" style="font-family: helvetica-43-light-extended;">3D Simulator</div>
+            <div class="Simul_content" style="font-family: Noto Sans KR;">에서 시나리오 별로</div>
         </div>
-    <div class="bubble-r-line" style="margin-top: 193px; height: 166px;">
-        <div class="bubble-r-box" style="height: 166px; left: 120.571px; width: 504px;">
-            <div class="bubble-element Group" style="width: 504px; left: 0px; position: absolute; box-sizing: border-box; z-index: 10; height: 166px; top: 0px; background-color: rgba(0, 0, 0, 0); border-radius: 0px;">
-                <div class="bubble-r-line" style="margin-top: 0px; height: 78px;">
-                    <div class="bubble-r-box" style="height: 78px; left: -10px; width: 320px;">
-                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 78px; width: 320px; left: 0px; top: 0px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: helvetica-43-light-extended; font-size: 49px; color: rgb(0, 0, 0); text-align: center; line-height: 1.16327; border-radius: 0px;"><div class="content">3D Simulator</div></div>
-                    </div>
-                </div>
-                <div class="bubble-r-line" style="margin-top: 0px; height: 88px;">
-                    <div class="bubble-r-box" style="height: 88px; left: 0px; width: 504px;">
-                        <div class="bubble-element Text" style="position: absolute; box-sizing: border-box; z-index: 2; height: 88px; width: 504px; left: 0px; top: 0px; white-space: pre-wrap; overflow: visible; padding-bottom: 0px; font-family: helvetica-43-light-extended; font-size: 23px; color: rgb(0, 0, 0); line-height: 1.16667; border-radius: 0px;"><div class="content">3D Simulator에서 시나리오 별로
-    Local-life Mobility의 다양한 기능을 만나보세요. </div></div>
-                    </div>
-                </div>
-            </div>
+        <div class="Simulator_3" style="display: flex;">
+            <div class="Simul_content" style="font-family: helvetica-43-light-extended;">Local-life Mobility</div>
+            <div class="Simul_content" style="font-family: Noto Sans KR;">의 다양한 기능을 만나보세요.</div>
         </div>
     </div>
--->
+    <div id="main_body">
+        <div id="select_scenario">
+            <div id="scenario1">
+                <div class="fun_kr1_black" style="display: block; font-family: Noto Sans KR; font-weight: 400; color:black;">
+                    <div class="fun_text">농장에서 테이블로</div>
+                </div>
+                <div class="fun_en1_black" style="display: block; font-family: Helvetica; font-weight: 700; color:black;">
+                    <div class="fun_text">Farm to Table</div>
+                </div>
+                <div class="fun_kr1_gray" style="display: none; font-family: Noto Sans KR; font-weight: 400; color: #C4C4C4;">
+                    <div class="fun_text">농장에서 테이블로</div>
+                </div>
+                <div class="fun_en1_gray" style="display: none; font-family: Helvetica; font-weight: 700; color: #C4C4C4;">
+                    <div class="fun_text">Farm to Table</div>
+                </div>
+            </div>
+            <div id="scenario2">
+                <div class="fun_kr2_black" style="display: none; font-family: Noto Sans KR; font-weight: 400; color:black;">
+                    <div class="fun_text">주문형 생활</div>
+                </div>
+                <div class="fun_en2_black" style="display: none; font-family: Helvetica; font-weight: 700; color:black;">
+                    <div class="fun_text">Life On Demand</div>
+                </div>
+                <div class="fun_kr2_gray" style="display: block; font-family: Noto Sans KR; font-weight: 400; color: #C4C4C4;">
+                    <div class="fun_text">주문형 생활</div>
+                </div>
+                <div class="fun_en2_gray" style="display: block; font-family: Helvetica; font-weight: 700; color: #C4C4C4;">
+                    <div class="fun_text">Life On Demand</div>
+                </div>
+            </div>
+            <div id="scenario3">
+                <div class="fun_kr3_black" style="display: none; font-family: Noto Sans KR; font-weight: 400; color:black;">
+                    <div class="fun_text">마음에서 마음으로</div>
+                </div>
+                <div class="fun_en3_black" style="display: none; font-family: Helvetica; font-weight: 700; color:black;">
+                    <div class="fun_text">Heart to Heart</div>
+                </div>
+                <div class="fun_kr3_gray" style="display: block; font-family: Noto Sans KR; font-weight: 400; color: #C4C4C4;">
+                    <div class="fun_text">마음에서 마음으로</div>
+                </div>
+                <div class="fun_en3_gray" style="display: block; font-family: Helvetica; font-weight: 700; color: #C4C4C4;">
+                    <div class="fun_text">Heart to Heart</div>
+                </div>
+            </div>
+            <div id="scenario4">
+                <div class="fun_kr4_black" style="display: none; font-family: Noto Sans KR; font-weight: 400; color:black;">
+                    <div class="fun_text">기능 살펴보기</div>
+                </div>
+                <div class="fun_en4_black" style="display: none; font-family: Helvetica; font-weight: 700; color:black;">
+                    <div class="fun_text">Specification</div>
+                </div>
+                <div class="fun_kr4_gray" style="display: block; font-family: Noto Sans KR; font-weight: 400; color: #C4C4C4;">
+                    <div class="fun_text">기능 살펴보기</div>
+                </div>
+                <div class="fun_en4_gray" style="display: block; font-family: Helvetica; font-weight: 700; color: #C4C4C4;">
+                    <div class="fun_text">Specification</div>
+                </div>
+            </div>
+        </div> 
+        <div id="three_js_body">
+            <img src="./bomarket_360/0001.png" id="first_img">
+        </div>
+    </div>
+    <div id="explain_body">
+        <div id="eb_up"></div>
+        <div id="eb_down">
+            <hr id="up_hr">
+            <hr>
+        </div>
+    </div>
 </body>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
+    import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyCgyHE9mpg-5KJB8A5sZHEbu96T7N8UeN8",
+      authDomain: "caring-bomarket.firebaseapp.com",
+      projectId: "caring-bomarket",
+      storageBucket: "caring-bomarket.appspot.com",
+      messagingSenderId: "598139022428",
+      appId: "1:598139022428:web:7b266eea9b575ed5770a99",
+      measurementId: "G-89TPP0FB40"
+    };
+</script>
+<script type="module" >
+    let aElem = [];
+    let clickedNumber = 0;
+    let ulElem;
+    let bomarket_360 = []
+    for(var i = 0; i < 24; i++){
+        if(i>=9){
+            bomarket_360[i] = "./bomarket_360/00" + String(i+1) + ".png";
+        }
+        else{
+            bomarket_360[i] = "./bomarket_360/000" + String(i+1) + ".png";
+        }
+    }
+    let functionFile = [['./images/fun1up.png','./images/fun1exp.png','./images/fun1down.png'],
+    ['./images/fun2up.png','./images/fun2exp.png','./images/fun2down.png'],
+    ['./images/fun3up.png','./images/fun3exp.png','./images/fun3down.png'],
+    ['./images/fun4up.png','./images/fun4exp.png','./images/fun4down.png'],
+    ['./images/fun5up.png','./images/fun5exp.png','./images/fun5down.png']];
+    let functionIndex = [[1,5],[2,3,5],[4,5],[1,2,3,4,5]];
+    class App{
+        constructor() {
+            
+            this.getChild();
+            this.setChildEvent();
+            this.slideimage();
+        }
+        slideimage()
+        {
+            const slider = document.querySelector('#three_js_body');
+            const first_img = document.getElementById('first_img');
+            for(var i = 1; i < 24; i++){
+                let make_img = document.createElement('img');
+                make_img.src = bomarket_360[i];
+                slider.appendChild(make_img);
+            }
+            const childList = slider.children;
+            for(var i = 1; i < childList.length; i++)
+            {
+                childList[i].style.display = "none";
+            }
+            let isDown = false;
+            let startX, idx = 0;
+            let scrollLeft;
+            slider.addEventListener('mousedown', e => {
+                isDown = true;
+                slider.classList.add('active');
+                startX = e.pageX - slider.offsetLeft;
+                scrollLeft = slider.scrollLeft;
+            });
+
+            slider.addEventListener('mouseleave', () => {
+                isDown = false;
+                slider.classList.remove('active');
+            });
+
+            slider.addEventListener('mouseup', () => {
+                isDown = false;
+                slider.classList.remove('active');
+            });
+            slider.addEventListener('mousemove', e => {
+                if (!isDown) return; 
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const walk = x - startX;
+                const now_sl = scrollLeft - walk;
+
+                const before_idx = idx;
+                idx = parseInt(now_sl / 15);
+                if(idx > 24){
+                    idx = 0;
+                }
+                if(idx <= -24){
+                    idx = 0;
+                }
+
+                if(before_idx >= 0){
+                    childList[before_idx].style.display = "none";
+                }
+                else{
+                    childList[23 + before_idx].style.display = "none";
+                }
+                if(idx >= 0){
+                    childList[idx].style.display = "block";
+                }
+                else{
+                    childList[23 + idx].style.display = "block";
+                }
+                slider.scrollLeft = scrollLeft - walk;
+            });
+        }
+        getChild()
+        {
+            ulElem = document.getElementById('select_scenario');
+            aElem = ulElem.children;
+
+            var up_hr = document.getElementById('up_hr');
+
+            var img = document.createElement('img');
+            img.name = 'function_img';
+            img.src = './images/fun1up.png';
+            img.id = 'function_img';
+
+            var img_explain = document.createElement('img');
+            img_explain.name = 'function_explain_img';
+            img_explain.id = 'function_explain_img';
+            img_explain.src = './images/fun1exp.png';
+            
+            img_explain.style.display = 'none';
+            var mhr = document.createElement('hr');
+            up_hr.after(img);
+            img.after(img_explain);
+            img.addEventListener("click",function()
+            {
+                if(img_explain.style.display == "none")
+                {
+                    var all_img = document.getElementsByName('function_img');
+                    var all_explain = document.getElementsByName('function_explain_img');
+                    for(let k = 0; k < all_explain.length; k++)
+                    {
+                        if(all_explain[k].style.display == "block")
+                        {
+                            
+                            all_img[k].src = "./images/fun"+ all_img[k].src.slice(all_img[k].src.length - 9,-8) + "up.png";
+                            all_explain[k].style.display = "none";
+
+                        }
+                    }
+
+                    img_explain.style.display = "block";
+                    var nowidx = parseInt(this.src.slice(-7,-6));
+                    console.log(nowidx);
+                    this.src = functionFile[nowidx-1][2];
+                }
+                else{
+                    img_explain.style.display = "none";
+                    var nowidx = parseInt(this.src.slice(-9,-8));
+                    this.src = functionFile[nowidx-1][0];
+                }
+            })
+
+            var img1 = document.createElement('img');
+            img1.name = 'function_img';
+            img1.src = './images/fun5up.png';
+            img1.id = 'function_img';
+
+            var img_explain1 = document.createElement('img');
+            img_explain1.name = 'function_explain_img';
+            img_explain1.id = 'function_explain_img';
+            img_explain1.src = './images/fun5exp.png';
+            img_explain1.style.display = 'none';
+
+            img_explain.after(img1);
+            img1.after(img_explain1);
+
+            img1.before(mhr);
+            img1.addEventListener("click",function(){
+                if(img_explain1.style.display == "none")
+                {
+                    var all_img = document.getElementsByName('function_img');
+                    var all_explain = document.getElementsByName('function_explain_img');
+                    for(let k = 0; k < all_explain.length; k++)
+                    {
+                        if(all_explain[k].style.display == "block")
+                        {
+                            
+                            all_img[k].src = "./images/fun"+ all_img[k].src.slice(all_img[k].src.length - 9,-8) + "up.png";
+                            all_explain[k].style.display = "none";
+
+                        }
+                    }
+
+                    img_explain1.style.display = "block";
+                    var nowidx = parseInt(this.src.slice(-7,-6));
+                    console.log(nowidx);
+                    this.src = functionFile[nowidx-1][2];
+                }
+                else{
+                    img_explain1.style.display = "none";
+                    var nowidx = parseInt(this.src.slice(-9,-8));
+                    this.src = functionFile[nowidx-1][0];
+                }
+            })
+        }
+        setChildEvent()
+        {
+            for (let i = 0; i < 4; i++)
+            {
+                aElem[i].addEventListener("click", function() {
+                    for(let k = 0; k < 4; k++){
+                        if (k == i)
+                        {
+                            aElem[k].children[0].style.display = 'block';
+                            aElem[k].children[1].style.display = 'block';
+                            aElem[k].children[2].style.display = 'none';
+                            aElem[k].children[3].style.display = 'none';
+                        }
+                        else
+                        {
+                            aElem[k].children[0].style.display = 'none';
+                            aElem[k].children[1].style.display = 'none';
+                            aElem[k].children[2].style.display = 'block';
+                            aElem[k].children[3].style.display = 'block';
+                        }
+                    }
+                    clickedNumber = i;
+
+                    var eb_down = document.getElementById('eb_down');
+                    ///모든 요소 삭제
+                    while (eb_down.childNodes.length > 2) {
+                        eb_down.removeChild(eb_down.lastChild);
+                    }
+                    var up_hr = document.getElementById('up_hr');
+
+                    for (let j = 0; j < functionIndex[i].length; j++){
+                        let now_idx = functionIndex[i][j];
+                        var img, img_explain;
+                        for(let h = 0; h < functionFile[now_idx-1].length; h++){
+                            if(h == 0)
+                            {
+                                var img = document.createElement('img');
+                                img.name = 'function_img';
+                                img.id = 'function_img';
+                                img.src = functionFile[now_idx-1][0];
+                            }
+                            else if(h == 1){
+                                var img_explain = document.createElement('img');
+                                img_explain.name = 'function_explain_img';
+                                img_explain.id = 'function_explain_img';
+                                img_explain.src = functionFile[now_idx-1][1];
+                                img_explain.style.display = 'none';
+                            }
+                        }
+                        eb_down.appendChild(img);
+                        eb_down.appendChild(img_explain);
+                        var hrt = document.createElement('hr');
+                        eb_down.appendChild(hrt);
+                        img.addEventListener("click",function(){
+                            var le = this.nextElementSibling;
+                            if(le.style.display == "none")
+                            {
+                                var all_img = document.getElementsByName('function_img');
+                                var all_explain = document.getElementsByName('function_explain_img');
+                                for(let k = 0; k < all_explain.length; k++)
+                                {
+                                    if(all_explain[k].style.display == "block")
+                                    {
+                                        
+                                        all_img[k].src = "./images/fun"+ all_img[k].src.slice(all_img[k].src.length - 9,-8) + "up.png";
+                                        all_explain[k].style.display = "none";
+
+                                    }
+                                }
+
+                                le.style.display = "block";
+                                var nowidx = parseInt(this.src.slice(-7,-6));
+                                this.src = functionFile[nowidx-1][2];
+                            }
+                            else{
+                                le.style.display = "none";
+                                var nowidx = parseInt(this.src.slice(-9,-8));
+                                this.src = functionFile[nowidx-1][0];
+                            }
+                        })
+                    }
+                });
+            }
+        }
+    }
+    window.onload = function() {
+        new App();
+    }
+    </script>
 </html>
