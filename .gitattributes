@@ -1,0 +1,2 @@
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+homepage/video/BOMARKET_Local_Life_Mobility_0506.mp4 filter=lfs diff=lfs merge=lfs -text
