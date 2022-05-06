@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,43 +10,41 @@
     <link rel="shortcut icon" href="./images/favicon_BOMARKET.ico">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
         @font-face {
             font-family: 'helvetica-43-light-extended';
-            src:url('./font/helvetica-43-light-extended.otf') format('woff'),
+            src: url('./font/helvetica-43-light-extended.otf') format('woff'),
                 url('./font/helvetica-43-light-extended.otf') format('woff2');
         }
 
-        @media screen and (min-width:768px)
-        {
-            .logo_img
-            {
+        @media screen and (min-width:768px) {
+            .logo_img {
                 width: 13.85vw;
-                height:auto;
+                height: auto;
                 margin-left: 4.47vw;
                 margin-top: 2.76vw;
             }
 
-            .bar_img
-            {
+            .bar_img {
                 display: block;
                 width: 100%;
                 height: 100%;
                 margin: 0px;
                 border-radius: 0px;
             }
-            .video_bar
-            {
+
+            .video_bar {
                 display: flex;
                 margin-top: 1.2vw;
                 height: 8.59vw;
                 justify-content: center;
             }
-            .senario
-            {
+
+            .senario {
                 display: flex;
             }
-            .bar
-            {
+
+            .bar {
                 height: 0.78vw;
                 left: 0px;
                 width: 22.86vw;
@@ -53,119 +52,101 @@
                 margin-right: 0.52vw;
                 margin-left: 0.52vw;
             }
-            .Simulator
-            {
+
+            .Simulator {
                 margin-top: 10.68vw;
                 margin-left: 4.479vw;
                 display: block;
             }
 
-            .Simulator_1
-            {
+            .Simulator_1 {
                 margin-bottom: 1.04vw;
                 font-size: 2.604vw;
                 line-height: 3.02vw;
                 font-weight: 400;
             }
 
-            .Simulator_2
-            {
+            .Simulator_2 {
                 font-size: 1.25vw;
                 line-height: 1.46vw;
                 font-weight: 400;
             }
 
-            .Simulator_3
-            {
+            .Simulator_3 {
                 font-size: 1.25vw;
                 line-height: 1.46vw;
                 font-weight: 400;
             }
 
-            .video
-            {
+            .video {
                 margin-top: 2.7vw;
                 height: 53.2vw;
                 width: 94.58vw;
             }
 
-            .video_box
-            {
+            .video_box {
                 display: flex;
                 justify-content: center;
             }
         }
-        
-        @media screen and (max-width:767px)
-        {
-            .logo_img
-            {
+
+        @media screen and (max-width:767px) {
+            .logo_img {
                 width: 28.611vw;
-                height:auto;
+                height: auto;
                 margin-left: 2.22vw;
                 margin-top: 7.2vw;
             }
 
-            .video_box
-            {
+            .video_box {
                 display: flex;
                 justify-content: center;
             }
 
-            .video
-            {
+            .video {
                 margin-top: 4.44vw;
                 height: auto;
                 width: 93.7vw;
             }
 
-            .senario
-            {
+            .senario {
                 display: none;
             }
 
-            .content
-            {
+            .content {
                 display: none;
             }
 
-            .video_bar
-            {
+            .video_bar {
                 display: none;
             }
 
-            .bar
-            {
+            .bar {
                 display: none;
             }
 
-            .bar_img
-            {
+            .bar_img {
                 display: none;
             }
 
-            .Simulator
-            {
+            .Simulator {
                 margin-top: 20.417vw;
                 margin-left: 2.222vw;
                 display: block;
             }
 
-            .Simulator_1
-            {
+            .Simulator_1 {
                 margin-bottom: 1.786vw;
                 font-size: 4.633vw;
                 line-height: 5.422vw;
             }
 
-            .Simulator_2
-            {
+            .Simulator_2 {
                 font-size: 2.258vw;
                 line-height: 2.642vw;
             }
 
-            .Simulator_3
-            {
+            .Simulator_3 {
                 font-size: 2.258vw;
                 line-height: 2.642vw;
             }
@@ -173,6 +154,7 @@
     </style>
     <script defer src="./videoControl.js"></script>
 </head>
+
 <body>
     <a href="./index.html" class="logo">
         <img alt="" class="logo_img" src="./images/logo_left_transparent.png">
@@ -189,52 +171,65 @@
     <div class="video_bar">
         <div class="bar" id="scn1">
             <img alt="" class="bar_img" src="./images/black_line.png">
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw;">
+            <div class="senario"
+                style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw;">
                 <div class="content">Scenario 1</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
+            <div class="senario"
+                style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700;">
                 <div class="content">Farm to Table</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Noto Sans KR; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
+            <div class="senario"
+                style="justify-content: center; font-family: Noto Sans KR; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw;">
                 <div class="content">농장에서 테이블로</div>
             </div>
         </div>
         <div class="bar" id="scn2">
             <img alt="" class="bar_img" src="./images/gray_line.png">
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw; color: #989898;">
+            <div class="senario"
+                style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw; color: #989898;">
                 <div class="content">Scenario 2</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700; color: #989898;">
+            <div class="senario"
+                style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700; color: #989898;">
                 <div class="content">Life On Demand</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Noto Sans KR; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw; color: #989898;">
+            <div class="senario"
+                style="justify-content: center; font-family: Noto Sans KR; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw; color: #989898;">
                 <div class="content">주문형 생활</div>
             </div>
         </div>
         <div class="bar" id="scn3">
             <img alt="" class="bar_img" src="./images/gray_line.png">
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw; color: #BABABA; opacity: 0.4; filter: blur(3px);">
+            <div class="senario"
+                style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw; color: #BABABA; opacity: 0.4; filter: blur(3px);">
                 <div class="content">Scenario 3</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700; color: #BABABA; opacity: 0.4; filter: blur(3px);">
+            <div class="senario"
+                style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700; color: #BABABA; opacity: 0.4; filter: blur(3px);">
                 <div class="content">Heart to Heart</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Noto Sans KR; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw; color: #BABABA; opacity: 0.4; filter: blur(3px);">
+            <div class="senario"
+                style="justify-content: center; font-family: Noto Sans KR; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw; color: #BABABA; opacity: 0.4; filter: blur(3px);">
                 <div class="content">마음에서 마음으로</div>
             </div>
-            <div class="senario" style="top: 67.6042vw; left: 55.5vw; justify-content: center; font-family: Helvetica; font-size: 1.5057vw; line-height: 1.73125vw; color: #989898; font-weight: 700; z-index: 1; position: absolute;">
+            <div class="senario"
+                style="top: 67.6042vw; left: 55.5vw; justify-content: center; font-family: Helvetica; font-size: 1.5057vw; line-height: 1.73125vw; color: #989898; font-weight: 700; z-index: 1; position: absolute;">
                 <div class="content">5월 9일 공개 예정</div>
             </div>
         </div>
         <div class="bar" id="func">
             <img alt="" class="bar_img" src="./images/gray_line.png">
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw; color: #989898;">
+            <div class="senario"
+                style="justify-content: center; font-family: Helvetica; font-size: 1.25vw; margin-top: 1.48vw; line-height: 1.67vw; color: #989898;">
                 <div class="content">Function</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700; color: #989898;">
+            <div class="senario"
+                style="justify-content: center; font-family: Helvetica; font-size: 1.51vw; margin-top: 0.417vw; line-height: 1.72vw; font-weight: 700; color: #989898;">
                 <div class="content">Specification</div>
             </div>
-            <div class="senario" style="justify-content: center; font-family: Noto Sans KR; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw; color: #989898;">
+            <div class="senario"
+                style="justify-content: center; font-family: Noto Sans KR; font-size: 1.04vw; margin-top: 0.21vw; line-height: 1.35vw; color: #989898;">
                 <div class="content">기능 살펴보기</div>
             </div>
         </div>
@@ -253,62 +248,78 @@
     <div id="main_body">
         <div id="select_scenario">
             <div id="scenario1">
-                <div class="fun_kr1_black" style="display: block; font-family: Noto Sans KR; font-weight: 400; color:black;">
+                <div class="fun_kr1_black"
+                    style="display: block; font-family: Noto Sans KR; font-weight: 400; color:black;">
                     <div class="fun_text">농장에서 테이블로</div>
                 </div>
-                <div class="fun_en1_black" style="display: block; font-family: Helvetica; font-weight: 700; color:black;">
+                <div class="fun_en1_black"
+                    style="display: block; font-family: Helvetica; font-weight: 700; color:black;">
                     <div class="fun_text">Farm to Table</div>
                 </div>
-                <div class="fun_kr1_gray" style="display: none; font-family: Noto Sans KR; font-weight: 400; color: #C4C4C4;">
+                <div class="fun_kr1_gray"
+                    style="display: none; font-family: Noto Sans KR; font-weight: 400; color: #C4C4C4;">
                     <div class="fun_text">농장에서 테이블로</div>
                 </div>
-                <div class="fun_en1_gray" style="display: none; font-family: Helvetica; font-weight: 700; color: #C4C4C4;">
+                <div class="fun_en1_gray"
+                    style="display: none; font-family: Helvetica; font-weight: 700; color: #C4C4C4;">
                     <div class="fun_text">Farm to Table</div>
                 </div>
             </div>
             <div id="scenario2">
-                <div class="fun_kr2_black" style="display: none; font-family: Noto Sans KR; font-weight: 400; color:black;">
+                <div class="fun_kr2_black"
+                    style="display: none; font-family: Noto Sans KR; font-weight: 400; color:black;">
                     <div class="fun_text">주문형 생활</div>
                 </div>
-                <div class="fun_en2_black" style="display: none; font-family: Helvetica; font-weight: 700; color:black;">
+                <div class="fun_en2_black"
+                    style="display: none; font-family: Helvetica; font-weight: 700; color:black;">
                     <div class="fun_text">Life On Demand</div>
                 </div>
-                <div class="fun_kr2_gray" style="display: block; font-family: Noto Sans KR; font-weight: 400; color: #C4C4C4;">
+                <div class="fun_kr2_gray"
+                    style="display: block; font-family: Noto Sans KR; font-weight: 400; color: #C4C4C4;">
                     <div class="fun_text">주문형 생활</div>
                 </div>
-                <div class="fun_en2_gray" style="display: block; font-family: Helvetica; font-weight: 700; color: #C4C4C4;">
+                <div class="fun_en2_gray"
+                    style="display: block; font-family: Helvetica; font-weight: 700; color: #C4C4C4;">
                     <div class="fun_text">Life On Demand</div>
                 </div>
             </div>
             <div id="scenario3">
-                <div class="fun_kr3_black" style="display: none; font-family: Noto Sans KR; font-weight: 400; color:black;">
+                <div class="fun_kr3_black"
+                    style="display: none; font-family: Noto Sans KR; font-weight: 400; color:black;">
                     <div class="fun_text">마음에서 마음으로</div>
                 </div>
-                <div class="fun_en3_black" style="display: none; font-family: Helvetica; font-weight: 700; color:black;">
+                <div class="fun_en3_black"
+                    style="display: none; font-family: Helvetica; font-weight: 700; color:black;">
                     <div class="fun_text">Heart to Heart</div>
                 </div>
-                <div class="fun_kr3_gray" style="display: block; font-family: Noto Sans KR; font-weight: 400; color: #C4C4C4;">
+                <div class="fun_kr3_gray"
+                    style="display: block; font-family: Noto Sans KR; font-weight: 400; color: #C4C4C4;">
                     <div class="fun_text">마음에서 마음으로</div>
                 </div>
-                <div class="fun_en3_gray" style="display: block; font-family: Helvetica; font-weight: 700; color: #C4C4C4;">
+                <div class="fun_en3_gray"
+                    style="display: block; font-family: Helvetica; font-weight: 700; color: #C4C4C4;">
                     <div class="fun_text">Heart to Heart</div>
                 </div>
             </div>
             <div id="scenario4">
-                <div class="fun_kr4_black" style="display: none; font-family: Noto Sans KR; font-weight: 400; color:black;">
+                <div class="fun_kr4_black"
+                    style="display: none; font-family: Noto Sans KR; font-weight: 400; color:black;">
                     <div class="fun_text">기능 살펴보기</div>
                 </div>
-                <div class="fun_en4_black" style="display: none; font-family: Helvetica; font-weight: 700; color:black;">
+                <div class="fun_en4_black"
+                    style="display: none; font-family: Helvetica; font-weight: 700; color:black;">
                     <div class="fun_text">Specification</div>
                 </div>
-                <div class="fun_kr4_gray" style="display: block; font-family: Noto Sans KR; font-weight: 400; color: #C4C4C4;">
+                <div class="fun_kr4_gray"
+                    style="display: block; font-family: Noto Sans KR; font-weight: 400; color: #C4C4C4;">
                     <div class="fun_text">기능 살펴보기</div>
                 </div>
-                <div class="fun_en4_gray" style="display: block; font-family: Helvetica; font-weight: 700; color: #C4C4C4;">
+                <div class="fun_en4_gray"
+                    style="display: block; font-family: Helvetica; font-weight: 700; color: #C4C4C4;">
                     <div class="fun_text">Specification</div>
                 </div>
             </div>
-        </div> 
+        </div>
         <div id="three_js_body">
             <img src="./bomarket_360/0001.png" id="first_img">
         </div>
@@ -325,53 +336,51 @@
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
     import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
     const firebaseConfig = {
-      apiKey: "AIzaSyCgyHE9mpg-5KJB8A5sZHEbu96T7N8UeN8",
-      authDomain: "caring-bomarket.firebaseapp.com",
-      projectId: "caring-bomarket",
-      storageBucket: "caring-bomarket.appspot.com",
-      messagingSenderId: "598139022428",
-      appId: "1:598139022428:web:7b266eea9b575ed5770a99",
-      measurementId: "G-89TPP0FB40"
+        apiKey: "AIzaSyCgyHE9mpg-5KJB8A5sZHEbu96T7N8UeN8",
+        authDomain: "caring-bomarket.firebaseapp.com",
+        projectId: "caring-bomarket",
+        storageBucket: "caring-bomarket.appspot.com",
+        messagingSenderId: "598139022428",
+        appId: "1:598139022428:web:7b266eea9b575ed5770a99",
+        measurementId: "G-89TPP0FB40"
     };
 </script>
-<script type="module" >
+<script type="module">
     let aElem = [];
     let clickedNumber = 0;
     let ulElem;
     let bomarket_360 = []
-    for(var i = 0; i < 24; i++){
-        if(i>=9){
-            bomarket_360[i] = "./bomarket_360/00" + String(i+1) + ".png";
+    for (var i = 0; i < 24; i++) {
+        if (i >= 9) {
+            bomarket_360[i] = "./bomarket_360/00" + String(i + 1) + ".png";
         }
-        else{
-            bomarket_360[i] = "./bomarket_360/000" + String(i+1) + ".png";
+        else {
+            bomarket_360[i] = "./bomarket_360/000" + String(i + 1) + ".png";
         }
     }
-    let functionFile = [['./images/fun1up.png','./images/fun1exp.png','./images/fun1down.png'],
-    ['./images/fun2up.png','./images/fun2exp.png','./images/fun2down.png'],
-    ['./images/fun3up.png','./images/fun3exp.png','./images/fun3down.png'],
-    ['./images/fun4up.png','./images/fun4exp.png','./images/fun4down.png'],
-    ['./images/fun5up.png','./images/fun5exp.png','./images/fun5down.png']];
-    let functionIndex = [[1,5],[2,3,5],[4,5],[1,2,3,4,5]];
-    class App{
+    let functionFile = [['./images/fun1up.png', './images/fun1exp.png', './images/fun1down.png'],
+    ['./images/fun2up.png', './images/fun2exp.png', './images/fun2down.png'],
+    ['./images/fun3up.png', './images/fun3exp.png', './images/fun3down.png'],
+    ['./images/fun4up.png', './images/fun4exp.png', './images/fun4down.png'],
+    ['./images/fun5up.png', './images/fun5exp.png', './images/fun5down.png']];
+    let functionIndex = [[1, 5], [2, 3, 5], [4, 5], [1, 2, 3, 4, 5]];
+    class App {
         constructor() {
-            
+
             this.getChild();
             this.setChildEvent();
             this.slideimage();
         }
-        slideimage()
-        {
+        slideimage() {
             const slider = document.querySelector('#three_js_body');
             const first_img = document.getElementById('first_img');
-            for(var i = 1; i < 24; i++){
+            for (var i = 1; i < 24; i++) {
                 let make_img = document.createElement('img');
                 make_img.src = bomarket_360[i];
                 slider.appendChild(make_img);
             }
             const childList = slider.children;
-            for(var i = 1; i < childList.length; i++)
-            {
+            for (var i = 1; i < childList.length; i++) {
                 childList[i].style.display = "none";
             }
             let isDown = false;
@@ -394,7 +403,7 @@
                 slider.classList.remove('active');
             });
             slider.addEventListener('mousemove', e => {
-                if (!isDown) return; 
+                if (!isDown) return;
                 e.preventDefault();
                 const x = e.pageX - slider.offsetLeft;
                 const walk = x - startX;
@@ -402,30 +411,29 @@
 
                 const before_idx = idx;
                 idx = parseInt(now_sl / 15);
-                if(idx > 24){
+                if (idx > 24) {
                     idx = 0;
                 }
-                if(idx <= -24){
+                if (idx <= -24) {
                     idx = 0;
                 }
 
-                if(before_idx >= 0){
+                if (before_idx >= 0) {
                     childList[before_idx].style.display = "none";
                 }
-                else{
+                else {
                     childList[23 + before_idx].style.display = "none";
                 }
-                if(idx >= 0){
+                if (idx >= 0) {
                     childList[idx].style.display = "block";
                 }
-                else{
+                else {
                     childList[23 + idx].style.display = "block";
                 }
                 slider.scrollLeft = scrollLeft - walk;
             });
         }
-        getChild()
-        {
+        getChild() {
             ulElem = document.getElementById('select_scenario');
             aElem = ulElem.children;
 
@@ -440,37 +448,33 @@
             img_explain.name = 'function_explain_img';
             img_explain.id = 'function_explain_img';
             img_explain.src = './images/fun1exp.png';
-            
+
             img_explain.style.display = 'none';
             var mhr = document.createElement('hr');
             up_hr.after(img);
             img.after(img_explain);
-            img.addEventListener("click",function()
-            {
-                if(img_explain.style.display == "none")
-                {
+            img.addEventListener("click", function () {
+                if (img_explain.style.display == "none") {
                     var all_img = document.getElementsByName('function_img');
                     var all_explain = document.getElementsByName('function_explain_img');
-                    for(let k = 0; k < all_explain.length; k++)
-                    {
-                        if(all_explain[k].style.display == "block")
-                        {
-                            
-                            all_img[k].src = "./images/fun"+ all_img[k].src.slice(all_img[k].src.length - 9,-8) + "up.png";
+                    for (let k = 0; k < all_explain.length; k++) {
+                        if (all_explain[k].style.display == "block") {
+
+                            all_img[k].src = "./images/fun" + all_img[k].src.slice(all_img[k].src.length - 9, -8) + "up.png";
                             all_explain[k].style.display = "none";
 
                         }
                     }
 
                     img_explain.style.display = "block";
-                    var nowidx = parseInt(this.src.slice(-7,-6));
+                    var nowidx = parseInt(this.src.slice(-7, -6));
                     console.log(nowidx);
-                    this.src = functionFile[nowidx-1][2];
+                    this.src = functionFile[nowidx - 1][2];
                 }
-                else{
+                else {
                     img_explain.style.display = "none";
-                    var nowidx = parseInt(this.src.slice(-9,-8));
-                    this.src = functionFile[nowidx-1][0];
+                    var nowidx = parseInt(this.src.slice(-9, -8));
+                    this.src = functionFile[nowidx - 1][0];
                 }
             })
 
@@ -489,49 +493,42 @@
             img1.after(img_explain1);
 
             img1.before(mhr);
-            img1.addEventListener("click",function(){
-                if(img_explain1.style.display == "none")
-                {
+            img1.addEventListener("click", function () {
+                if (img_explain1.style.display == "none") {
                     var all_img = document.getElementsByName('function_img');
                     var all_explain = document.getElementsByName('function_explain_img');
-                    for(let k = 0; k < all_explain.length; k++)
-                    {
-                        if(all_explain[k].style.display == "block")
-                        {
-                            
-                            all_img[k].src = "./images/fun"+ all_img[k].src.slice(all_img[k].src.length - 9,-8) + "up.png";
+                    for (let k = 0; k < all_explain.length; k++) {
+                        if (all_explain[k].style.display == "block") {
+
+                            all_img[k].src = "./images/fun" + all_img[k].src.slice(all_img[k].src.length - 9, -8) + "up.png";
                             all_explain[k].style.display = "none";
 
                         }
                     }
 
                     img_explain1.style.display = "block";
-                    var nowidx = parseInt(this.src.slice(-7,-6));
+                    var nowidx = parseInt(this.src.slice(-7, -6));
                     console.log(nowidx);
-                    this.src = functionFile[nowidx-1][2];
+                    this.src = functionFile[nowidx - 1][2];
                 }
-                else{
+                else {
                     img_explain1.style.display = "none";
-                    var nowidx = parseInt(this.src.slice(-9,-8));
-                    this.src = functionFile[nowidx-1][0];
+                    var nowidx = parseInt(this.src.slice(-9, -8));
+                    this.src = functionFile[nowidx - 1][0];
                 }
             })
         }
-        setChildEvent()
-        {
-            for (let i = 0; i < 4; i++)
-            {
-                aElem[i].addEventListener("click", function() {
-                    for(let k = 0; k < 4; k++){
-                        if (k == i)
-                        {
+        setChildEvent() {
+            for (let i = 0; i < 4; i++) {
+                aElem[i].addEventListener("click", function () {
+                    for (let k = 0; k < 4; k++) {
+                        if (k == i) {
                             aElem[k].children[0].style.display = 'block';
                             aElem[k].children[1].style.display = 'block';
                             aElem[k].children[2].style.display = 'none';
                             aElem[k].children[3].style.display = 'none';
                         }
-                        else
-                        {
+                        else {
                             aElem[k].children[0].style.display = 'none';
                             aElem[k].children[1].style.display = 'none';
                             aElem[k].children[2].style.display = 'block';
@@ -547,22 +544,21 @@
                     }
                     var up_hr = document.getElementById('up_hr');
 
-                    for (let j = 0; j < functionIndex[i].length; j++){
+                    for (let j = 0; j < functionIndex[i].length; j++) {
                         let now_idx = functionIndex[i][j];
                         var img, img_explain;
-                        for(let h = 0; h < functionFile[now_idx-1].length; h++){
-                            if(h == 0)
-                            {
+                        for (let h = 0; h < functionFile[now_idx - 1].length; h++) {
+                            if (h == 0) {
                                 var img = document.createElement('img');
                                 img.name = 'function_img';
                                 img.id = 'function_img';
-                                img.src = functionFile[now_idx-1][0];
+                                img.src = functionFile[now_idx - 1][0];
                             }
-                            else if(h == 1){
+                            else if (h == 1) {
                                 var img_explain = document.createElement('img');
                                 img_explain.name = 'function_explain_img';
                                 img_explain.id = 'function_explain_img';
-                                img_explain.src = functionFile[now_idx-1][1];
+                                img_explain.src = functionFile[now_idx - 1][1];
                                 img_explain.style.display = 'none';
                             }
                         }
@@ -570,31 +566,28 @@
                         eb_down.appendChild(img_explain);
                         var hrt = document.createElement('hr');
                         eb_down.appendChild(hrt);
-                        img.addEventListener("click",function(){
+                        img.addEventListener("click", function () {
                             var le = this.nextElementSibling;
-                            if(le.style.display == "none")
-                            {
+                            if (le.style.display == "none") {
                                 var all_img = document.getElementsByName('function_img');
                                 var all_explain = document.getElementsByName('function_explain_img');
-                                for(let k = 0; k < all_explain.length; k++)
-                                {
-                                    if(all_explain[k].style.display == "block")
-                                    {
-                                        
-                                        all_img[k].src = "./images/fun"+ all_img[k].src.slice(all_img[k].src.length - 9,-8) + "up.png";
+                                for (let k = 0; k < all_explain.length; k++) {
+                                    if (all_explain[k].style.display == "block") {
+
+                                        all_img[k].src = "./images/fun" + all_img[k].src.slice(all_img[k].src.length - 9, -8) + "up.png";
                                         all_explain[k].style.display = "none";
 
                                     }
                                 }
 
                                 le.style.display = "block";
-                                var nowidx = parseInt(this.src.slice(-7,-6));
-                                this.src = functionFile[nowidx-1][2];
+                                var nowidx = parseInt(this.src.slice(-7, -6));
+                                this.src = functionFile[nowidx - 1][2];
                             }
-                            else{
+                            else {
                                 le.style.display = "none";
-                                var nowidx = parseInt(this.src.slice(-9,-8));
-                                this.src = functionFile[nowidx-1][0];
+                                var nowidx = parseInt(this.src.slice(-9, -8));
+                                this.src = functionFile[nowidx - 1][0];
                             }
                         })
                     }
@@ -602,8 +595,9 @@
             }
         }
     }
-    window.onload = function() {
+    window.onload = function () {
         new App();
     }
-    </script>
+</script>
+
 </html>
